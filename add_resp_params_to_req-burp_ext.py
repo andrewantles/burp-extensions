@@ -18,6 +18,10 @@ class BurpExtender(IBurpExtender, ISessionHandlingAction):
         This extension then retrieves the parameter(s) from the JSON response body.
         Create a session handling rule that runs the macro and then invokes this extension.
         The extension replaces the parameter/header in the next request.
+        
+        Biggest area for improvement is that a ton of work is being done in the performAction
+        method. This method is required, though readability would improve if some of the
+        work being done within could be abstracted out into other methods.
     '''
     
     def registerExtenderCallbacks(self, callbacks):
