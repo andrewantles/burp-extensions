@@ -2,7 +2,7 @@
 
 **`add_resp_param_to_req-burp_ext.py`**<br>
 <p>
-  I copied and modified this from a couple blogs:
+  Modified from a couple blogs:
 </p>
 
 * https://twelvesec.com/2017/05/05/authorization-token-manipulation/
